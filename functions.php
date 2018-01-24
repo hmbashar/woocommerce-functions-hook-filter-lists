@@ -6,3 +6,10 @@ if ( has_post_thumbnail( get_the_ID() ) ) {
 } else {
     echo '<img src="' . woocommerce_placeholder_img_src() . '" alt="Placeholder" />';
 }
+
+
+// Product Price Show
+$product->get_price_html();
+
+// Add To Cart link with text
+woocommerce_template_loop_add_to_cart();
